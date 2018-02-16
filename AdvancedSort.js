@@ -6,7 +6,7 @@ var students = [
 ];
 
 students.sort(function(a, b){
-    var nameA=a.name.toLowerCase(), nameB=b.name.toLowerCase()
+    var nameA=a.name, nameB=b.name;
     var dateA=new Date(a.age), dateB=new Date(b.age)
     if (nameA < nameB) //sort string ascending
         return -1
